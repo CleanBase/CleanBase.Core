@@ -1,0 +1,15 @@
+﻿using CleanBase.Core.Entities.Generic;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CleanBase.Core.Entities
+{
+    public interface IEntityKeyName :
+        IEntityKeyNameOfT<string>,
+        IEntityKey
+    {
+    }
+}
