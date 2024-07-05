@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanBase.Core.Data.Policies
+namespace CleanBase.Core.Models.PDF
 {
-	public class ActiveRequiredPolicy <T> :
-
+	public class PDFConvertingOptions
 	{
-
 	}
 }

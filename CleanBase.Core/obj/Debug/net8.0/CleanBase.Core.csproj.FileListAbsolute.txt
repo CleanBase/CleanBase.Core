@@ -1,0 +1,6 @@
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.csproj.AssemblyReference.cache
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.AssemblyInfoInputs.cache
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.AssemblyInfo.cs
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.csproj.CoreCompileInputs.cache
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.sourcelink.json

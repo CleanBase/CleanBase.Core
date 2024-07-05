@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanBase.Core.Data.Policies
+namespace CleanBase.Core.Data.Policies.Base
 {
-	public class ActiveRequiredPolicy <T> :
-
-	{
-
-	}
+    internal interface IDataPolicy
+    {
+    }
 }
