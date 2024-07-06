@@ -4,7 +4,7 @@ namespace CleanBase.Core.Entities.Base
 {
     public interface IEntityCore
     {
-        void MarkDelete();
+        void MarkDeleted();
 
         Expression<Func<TResult>> BuildSummaryExpression<TResult>();
     }

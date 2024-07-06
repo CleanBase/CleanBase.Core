@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanBase.Core.Data.Policies.Base
+namespace CleanBase.Core.Data.Repositories
 {
-    public interface IDataPolicy
-    {
-    }
+	public interface IEmailTemplateRepository : IRepositoryOfT<>
+	{
+	}
 }

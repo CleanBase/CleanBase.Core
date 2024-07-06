@@ -9,7 +9,7 @@ namespace CleanBase.Core.Entities.Base
 {
 	public class EntityCore : IEntityCore
 	{
-		public virtual void MarkDelete()
+		public virtual void MarkDeleted()
 		{
 		}
 

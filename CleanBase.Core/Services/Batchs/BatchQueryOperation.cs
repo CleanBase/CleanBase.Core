@@ -8,7 +8,6 @@ namespace CleanBase.Core.Services.Batchs
 {
 	public class BatchQueryOperation
 	{
-
 		public static IEnumerable<T> GetAll<T>(
 			int pageSize,
 			Func<int, int, IEnumerable<T>> action)
