@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.6.2" />
+    <PackageReference Include="Serilog" Version="4.0.0" />
     <PackageReference Include="System.Collections" Version="4.3.0" />
     <PackageReference Include="System.ComponentModel" Version="4.3.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
@@ -23,6 +24,7 @@
     <Folder Include="Data\Policies\Generic\" />
     <Folder Include="Data\UnitOfWorks\" />
     <Folder Include="Data\Transactions\" />
+    <Folder Include="Services\Core\Generic\" />
   </ItemGroup>
 
 </Project>
