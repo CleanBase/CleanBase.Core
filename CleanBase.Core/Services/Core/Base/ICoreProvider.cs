@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,14 @@ namespace CleanBase.Core.Services.Core.Base
 {
 	public interface ICoreProvider
 	{
-		
+		ISmartLogger Logger { get; set; }
+
+		IMapper Mapper { get; set; }
+
+		IServiceProvider ServiceProvider { get; set; }
+
+		IIdentityProvider IdentityProvider { get; set; }
+
+		IPolicyFactory PolicyFactory { get; set; }
 	}
 }

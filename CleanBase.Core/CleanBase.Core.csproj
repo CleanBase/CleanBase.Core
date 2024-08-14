@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Policies\Generic\" />
     <Folder Include="Data\UnitOfWorks\" />
     <Folder Include="Data\Transactions\" />
     <Folder Include="Services\Core\Generic\" />
