@@ -4,3 +4,10 @@ D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.
 D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.AssemblyInfo.cs
 D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.csproj.CoreCompileInputs.cache
 D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.sourcelink.json
+D:\Clean-architechture\CleanBase\CleanBase.Core\bin\Debug\net8.0\CleanBase.Core.deps.json
+D:\Clean-architechture\CleanBase\CleanBase.Core\bin\Debug\net8.0\CleanBase.Core.dll
+D:\Clean-architechture\CleanBase\CleanBase.Core\bin\Debug\net8.0\CleanBase.Core.pdb
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.dll
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\refint\CleanBase.Core.dll
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.pdb
+D:\Clean-architechture\CleanBase\CleanBase.Core\obj\Debug\net8.0\ref\CleanBase.Core.dll

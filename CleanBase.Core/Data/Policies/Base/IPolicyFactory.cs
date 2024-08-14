@@ -8,6 +8,6 @@ namespace CleanBase.Core.Data.Policies.Base
 {
 	public interface IPolicyFactory
 	{
-		IEnumerable<IDataPolicy> CreateCorePolicy(Type entityType, )
+		//IEnumerable<IDataPolicy> CreateCorePolicy(Type entityType, );
 	}
 }

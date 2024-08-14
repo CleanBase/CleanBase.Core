@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Data.Policies
 {
-	public class ActiveRequiredPolicy <T> :
+	//public class ActiveRequiredPolicy <T> :
 
-	{
+	//{
 
-	}
+	//}
 }

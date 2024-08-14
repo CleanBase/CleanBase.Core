@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Data.Repositories
 {
-	public interface IEmailTemplateRepository : IRepositoryOfT<>
-	{
-	}
+	//public interface IEmailTemplateRepository : IRepositoryOfT<>
+	//{
+	//}
 }
