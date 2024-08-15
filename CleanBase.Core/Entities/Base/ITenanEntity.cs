@@ -8,6 +8,6 @@ namespace CleanBase.Core.Entities.Base
 {
     public interface ITenanEntity
     {
-        string? TenanId { get; set; }
+        string? TenantId { get; set; }
     }
 }

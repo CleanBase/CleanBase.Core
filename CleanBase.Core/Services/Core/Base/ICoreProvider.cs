@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CleanBase.Core.Data.Policies.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,6 @@ namespace CleanBase.Core.Services.Core.Base
 
 		IIdentityProvider IdentityProvider { get; set; }
 
-		IPolicyFactory PolicyFactory { get; set; }
+		IDataPolicy PolicyFactory { get; set; }
 	}
 }

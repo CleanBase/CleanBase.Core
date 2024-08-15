@@ -8,6 +8,6 @@ namespace CleanBase.Core.Data.Policies.Generic
 {
 	public interface IDeletePolicyOfT<T> : IModificationPolicyOfT<T>
 	{
-		void ChalengeDelete(T entity);
+		void ChallengeDelete(T entity);
 	}
 }

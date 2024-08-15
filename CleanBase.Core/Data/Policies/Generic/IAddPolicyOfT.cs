@@ -8,7 +8,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 {
 	public interface IAddPolicyOfT<T> : IModificationPolicyOfT<T>
 	{
-		void ChalengeBeforeAdd(T entity);
-		void ChalengeAfterAdd(T entity);
+		void ChallengeBeforeAdd(T entity);
+		void ChallengeAfterAdd(T entity);
 	}
 }

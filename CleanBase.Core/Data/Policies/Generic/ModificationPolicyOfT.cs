@@ -12,14 +12,14 @@ namespace CleanBase.Core.Data.Policies.Generic
 		/// Default implementation of the Chalenge method.
 		/// </summary>
 		/// <param name="entity">The entity to be processed.</param>
-		public void Chalenge(T entity) => throw new NotImplementedException();
+		public void Challenge(T entity) => throw new NotImplementedException();
 
 		/// <summary>
 		/// Virtual method to handle checks or actions before deleting an entity.
 		/// Can be overridden in derived classes to provide specific functionality.
 		/// </summary>
 		/// <param name="entity">The entity to be checked before deletion.</param>
-		public virtual void ChalengeDelete(T entity)
+		public virtual void ChallengeDelete(T entity)
 		{
 			// Default implementation does nothing.
 			// Override in derived classes to provide specific functionality.
@@ -30,7 +30,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 		/// Can be overridden in derived classes to provide specific functionality.
 		/// </summary>
 		/// <param name="entity">The entity to be checked before addition.</param>
-		public virtual void ChalengeBeforeAdd(T entity)
+		public virtual void ChallengeBeforeAdd(T entity)
 		{
 			// Default implementation does nothing.
 			// Override in derived classes to provide specific functionality.
@@ -41,7 +41,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 		/// Can be overridden in derived classes to provide specific functionality.
 		/// </summary>
 		/// <param name="entity">The entity to be checked before searching.</param>
-		public virtual void ChalengeFind(T entity)
+		public virtual void ChallengeFind(T entity)
 		{
 			// Default implementation does nothing.
 			// Override in derived classes to provide specific functionality.
@@ -52,7 +52,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 		/// Can be overridden in derived classes to provide specific functionality.
 		/// </summary>
 		/// <param name="entity">The entity to be checked before updating.</param>
-		public virtual void ChalengeBeforeUpdate(T entity)
+		public virtual void ChallengeBeforeUpdate(T entity)
 		{
 			// Default implementation does nothing.
 			// Override in derived classes to provide specific functionality.

@@ -9,6 +9,6 @@ namespace CleanBase.Core.Data.Policies.Generic
 {
 	public interface IFindPolicyOfT<T> : IDataPolicy
 	{
-		void ChalengeFind(T entity);
+		void ChallengeFind(T entity);
 	}
 }

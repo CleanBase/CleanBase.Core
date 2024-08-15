@@ -13,10 +13,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 	{
 		private ICoreProvider _coreProvider;
 
-		public OwnerOrSystemFilterPolicyOfT(ICoreProvider coreProvider)
-		{
-			this._coreProvider = coreProvider;
-		}
+		public OwnerOrSystemFilterPolicyOfT(ICoreProvider coreProvider) => _coreProvider = coreProvider;
 
 		public Expression<Func<T, bool>> Predicate()
 		{
