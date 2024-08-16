@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Services.Batchs
 {
-	internal class BatchOperationOfT<T> : IDisposable
+	public class BatchOperationOfT<T> : IDisposable
 	{
 		private static int DEFAULT_BATCH_SIZE = 100000;
 		private Func<int, int, Task<IEnumerable<T>>> _actionAsync;

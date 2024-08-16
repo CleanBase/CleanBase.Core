@@ -18,6 +18,6 @@ namespace CleanBase.Core.Services.Core.Base
 
 		IIdentityProvider IdentityProvider { get; set; }
 
-		IDataPolicy PolicyFactory { get; set; }
+		IPolicyFactory PolicyFactory { get; set; }
 	}
 }
