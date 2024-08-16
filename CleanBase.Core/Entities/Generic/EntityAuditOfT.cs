@@ -13,10 +13,10 @@ namespace CleanBase.Core.Entities.Generic
 		IEntityAuditOfT<TKey>
 	{
 		[MaxLength(36)]
-		public TKey? CreateBy { get; set; }
+		public TKey? CreatedBy { get; set; }
 
 		[MaxLength(36)]
-		public TKey? UpdateBy { get; set; }
+		public TKey? UpdatedBy { get; set; }
 		public DateTime CreatedDate { get; set; }
 		public DateTime UpdatedDate { get; set; }
 

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CleanBase.Core
-build_property.ProjectDir = D:\Clean-architechture\CleanBase\CleanBase.Core\
+build_property.ProjectDir = D:\Clean-architechture\CleanBase.Core\CleanBase.Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

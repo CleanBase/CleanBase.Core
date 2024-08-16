@@ -13,6 +13,6 @@ namespace CleanBase.Core.Entities
 		ITenanEntity
 	{
 		[MaxLength(36)]
-		public string? TenanId { get; set; }
+		public string? TenantId { get; set; }
 	}
 }

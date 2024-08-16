@@ -2523,11 +2523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Clean-architechture\\CleanBase\\CleanBase.Core\\CleanBase.Core.csproj",
+      "projectUniqueName": "D:\\Clean-architechture\\CleanBase.Core\\CleanBase.Core\\CleanBase.Core.csproj",
       "projectName": "CleanBase.Core",
-      "projectPath": "D:\\Clean-architechture\\CleanBase\\CleanBase.Core\\CleanBase.Core.csproj",
+      "projectPath": "D:\\Clean-architechture\\CleanBase.Core\\CleanBase.Core\\CleanBase.Core.csproj",
       "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-      "outputPath": "D:\\Clean-architechture\\CleanBase\\CleanBase.Core\\obj\\",
+      "outputPath": "D:\\Clean-architechture\\CleanBase.Core\\CleanBase.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",

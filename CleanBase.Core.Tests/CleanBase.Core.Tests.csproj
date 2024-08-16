@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CleanBase.Core\CleanBase.Core.csproj" />
+    <ProjectReference Include="..\CleanBase.Core\CleanBase.Core.csproj" />
   </ItemGroup>
 
 </Project>
