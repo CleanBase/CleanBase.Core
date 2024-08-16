@@ -50,4 +50,4 @@ namespace CleanBase.Core.Models.Excel
 		}
 	}
 }
-}
+

@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="FluentValidation" Version="11.9.2" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.6.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Serilog" Version="4.0.0" />
@@ -25,6 +24,7 @@
   <ItemGroup>
     <Folder Include="Data\UnitOfWorks\" />
     <Folder Include="Data\Transactions\" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>
