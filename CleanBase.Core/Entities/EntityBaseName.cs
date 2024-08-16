@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Entities
 {
-	public class EntityBaseName
+	public class EntityBaseName : 
+		EntityCoreKey,
+		IEntityKeyName
 	{
+		[System.ComponentModel.DataAnnotations.MaxLength(255)]
+		public string? Name { get; set; }
 	}
 }
