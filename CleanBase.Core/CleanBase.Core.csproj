@@ -4,6 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<PackageId>CleanBase.Core</PackageId>
+	<Authors>HoangVH238</Authors>
+	<Product>CleanBase.Core</Product>
   </PropertyGroup>
 
   <ItemGroup>
