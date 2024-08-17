@@ -7,7 +7,6 @@
 	<PackageId>CleanBase.Core</PackageId>
 	<Authors>HoangVH238</Authors>
 	<Product>CleanBase.Core</Product>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
