@@ -6,8 +6,8 @@ on:
       - 'v*'
 
 env:
-  PROJECT_PATH: 'CleanBase.Core\CleanBase.Core.csproj'
-  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}\output
+  PROJECT_PATH: 'CleanBase.Core/CleanBase.Core.csproj'
+  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
   NUGET_SOURCE_URL: 'https://api.nuget.org/v3/index.json'
 
 jobs:
@@ -31,14 +31,10 @@ jobs:
 
     - name: 'Get Version'
       id: version
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const tag = process.env.GITHUB_REF.replace('refs/tags/', '');
-          return tag;
+      run: echo "##[set-output name=version;]${{ github.ref_name }}"  # Extracts the tag version without 'refs/tags/' prefix
 
     - name: 'Pack project'
-      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.result }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
     - name: 'Push package'
-      run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -k ${{ secrets.NUGET_AUTH_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }}
+      run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/*.nupkg -k ${{ secrets.NUGET_AUTH_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }}
