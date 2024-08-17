@@ -7,6 +7,8 @@
 	<PackageId>CleanBase.Core</PackageId>
 	<Authors>HoangVH238</Authors>
 	<Product>CleanBase.Core</Product>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +30,7 @@
   <ItemGroup>
     <Folder Include="Data\UnitOfWorks\" />
     <Folder Include="Data\Transactions\" />
+	<None Include="..\LICENSE" Pack="true" PackagePath=""/>
   </ItemGroup>
 
 </Project>
