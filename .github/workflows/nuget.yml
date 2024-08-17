@@ -31,7 +31,10 @@ jobs:
 
     - name: 'Get Version'
       id: version
-      run: echo "VERSION=${{ github.ref_name }}" | sed 's/^v//' | tee -a $GITHUB_ENV
+      shell: pwsh
+      run: |
+        $version = $env:GITHUB_REF_NAME -replace '^v', ''
+        echo "VERSION=$version" | Out-File -FilePath $env:GITHUB_ENV -Append
 
     - name: 'Pack project'
       run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ env.VERSION }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
