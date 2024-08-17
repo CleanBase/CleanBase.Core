@@ -31,7 +31,7 @@ jobs:
 
     - name: 'Get Version'
       id: version
-      run: echo "##[set-output name=version;]${{ github.ref_name }}"  # Extracts the tag version without 'refs/tags/' prefix
+      run: echo "##[set-output name=version;]${{ github.ref_name#'v' }}"  # Remove 'v' from the tag
 
     - name: 'Pack project'
       run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
