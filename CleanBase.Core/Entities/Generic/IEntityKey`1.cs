@@ -9,6 +9,6 @@ namespace CleanBase.Core.Entities.Generic
 {
     public interface IEntityKey<TKey> : IEntityCore
     {
-        TKey Id { get; }
+        TKey Id { get; set; }
     }
 }
