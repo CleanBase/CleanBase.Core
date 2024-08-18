@@ -8,6 +8,6 @@ namespace CleanBase.Core.Entities.Base
 {
     public interface IKeyObject
     {
-		Guid Id { get; set; }
+		Guid? Id { get; set; }
     }
 }
