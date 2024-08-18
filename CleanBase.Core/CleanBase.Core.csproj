@@ -29,7 +29,7 @@
   <ItemGroup>
     <Folder Include="Data\UnitOfWorks\" />
     <Folder Include="Data\Transactions\" />
-	<None Include="..\LICENSE" Pack="true" PackagePath=""/>
+	<None Include="..\LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>

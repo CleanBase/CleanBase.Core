@@ -10,3 +10,4 @@ D:\Clean-architechture\CleanBase.Core\CleanBase.Core\obj\Debug\net8.0\CleanBase.
 D:\Clean-architechture\CleanBase.Core\CleanBase.Core\obj\Debug\net8.0\refint\CleanBase.Core.dll
 D:\Clean-architechture\CleanBase.Core\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.pdb
 D:\Clean-architechture\CleanBase.Core\CleanBase.Core\obj\Debug\net8.0\ref\CleanBase.Core.dll
+D:\Clean-architechture\CleanBase.Core\CleanBase.Core\obj\Debug\net8.0\CleanBase.Core.sourcelink.json

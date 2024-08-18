@@ -12,13 +12,13 @@ namespace CleanBase.Core.Services.Batchs
 			int pageSize,
 			Func<int, int, IEnumerable<T>> action)
 		{
-			return new BatchOperationOfT<T>(pageSize, action).GetAll();
+			return new BatchOperation<T>(pageSize, action).GetAll();
 		}
 
 		public static IEnumerable<T> GetAll<T>(
 			Func<int, int, IEnumerable<T>> action)
 		{
-			return new BatchOperationOfT<T>(action).GetAll();
+			return new BatchOperation<T>(action).GetAll();
 		}
 
 		public static void RunBatchOperation<T>(
@@ -26,14 +26,14 @@ namespace CleanBase.Core.Services.Batchs
 			Func<int, int, IEnumerable<T>> action,
 			Action<IEnumerable<T>> operaion)
 		{
-			new BatchOperationOfT<T>(pageSize, action, operaion).RunBatchOperation();
+			new BatchOperation<T>(pageSize, action, operaion).RunBatchOperation();
 		}
 
 		public static void RunBatchOperation<T>(
 			Func<int, int, IEnumerable<T>> action,
 			Action<IEnumerable<T>> operaion)
 		{
-			new BatchOperationOfT<T>(action, operaion).RunBatchOperation();
+			new BatchOperation<T>(action, operaion).RunBatchOperation();
 		}
 
 		public static async Task RunBatchOperationAsync<T>(
@@ -41,14 +41,14 @@ namespace CleanBase.Core.Services.Batchs
 			Func<int, int, Task<IEnumerable<T>>> action,
 			Func<IEnumerable<T>, Task> operation = null)
 		{
-			await new BatchOperationOfT<T>(pageSize, action, operation).RunBatchOperationAsync();
+			await new BatchOperation<T>(pageSize, action, operation).RunBatchOperationAsync();
 		}
 
 		public static async Task RunBatchOperationAsync<T>(
 			Func<int, int, Task<IEnumerable<T>>> action,
 			Func<IEnumerable<T>, Task> operation = null)
 		{
-			await new BatchOperationOfT<T>(action, operation).RunBatchOperationAsync();
+			await new BatchOperation<T>(action, operation).RunBatchOperationAsync();
 		}
 	}
 }

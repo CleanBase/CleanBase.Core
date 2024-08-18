@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CleanBase.Core.Entities
 {
 	public class EntityAudit :
-		EntityAuditOfT<string>,
+		EntityAudit<string>,
 		IEntityAudit
 	{
 	}

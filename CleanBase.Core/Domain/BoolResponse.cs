@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Domain
 {
-	public class BoolResponse : GeneralResponseOfT<bool>
+	public class BoolResponse : GeneralResponse<bool>
 	{
 		public BoolResponse(bool value, string message ="")
 			: base(value,message)

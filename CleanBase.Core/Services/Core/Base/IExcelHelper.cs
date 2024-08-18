@@ -10,9 +10,9 @@ namespace CleanBase.Core.Services.Core.Base
 {
 	public interface IExcelHelper
 	{
-		BatchOperationOfT<T> ReadFileAsBatch<T>(Stream stream, ExcelReaderOptions excelReaderOptions);
+		BatchOperation<T> ReadFileAsBatch<T>(Stream stream, ExcelReaderOptions excelReaderOptions);
 
-		BatchOperationOfT<T> ReadCsvFileAsBatch<T>(Stream stream, ExcelReaderOptions excelReaderOptions);
+		BatchOperation<T> ReadCsvFileAsBatch<T>(Stream stream, ExcelReaderOptions excelReaderOptions);
 
 		Task<Stream> Export(ExcelDataSource dataSource);
 

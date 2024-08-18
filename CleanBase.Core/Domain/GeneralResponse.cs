@@ -2,7 +2,7 @@
 
 namespace CleanBase.Core.Domain
 {
-	public class GeneralResponse : GeneralResponseOfT<object>
+	public class GeneralResponse : GeneralResponse<object>
 	{
 		public GeneralResponse(object result, string message) 
 			: base(result, message)

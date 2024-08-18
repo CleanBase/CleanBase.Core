@@ -16,7 +16,7 @@ namespace CleanBase.Core.Validators
 		/// <param name="validator">The validator instance.</param>
 		/// <param name="instance">The object to validate.</param>
 		/// <returns>True if validation is successful, otherwise false.</returns>
-		public static bool ValidateAndReturnBool<T>(this IValidatorOfT<T> validator, T instance)
+		public static bool ValidateAndReturnBool<T>(this IValidator<T> validator, T instance)
 		{
 			var result = validator.Validate(instance);
 			return result.IsValid;

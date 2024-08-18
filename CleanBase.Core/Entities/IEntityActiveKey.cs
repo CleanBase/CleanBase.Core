@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CleanBase.Core.Entities
 {
 	public interface IEntityActiveKey :
-		IEntityActiveKeyOfT<string>,
+		IEntityActiveKey<string>,
 		IEntityKey
 	{
 	}

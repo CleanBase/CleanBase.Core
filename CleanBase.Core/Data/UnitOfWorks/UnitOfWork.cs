@@ -53,7 +53,7 @@ namespace CleanBase.Core.Data.UnitOfWorks
 		/// </summary>
 		/// <typeparam name="T">The type of the entity.</typeparam>
 		/// <returns>An instance of <see cref="IRepository{T}"/> for the specified entity type.</returns>
-		public virtual IRepositoryOfT<T> GetRepositoryByEntityType<T>() where T : class, IEntityCore
+		public virtual IRepository<T> GetRepositoryByEntityType<T>() where T : class, IEntityCore
 		{
 			// Logic to retrieve the appropriate repository based on the entity type.
 			throw new NotImplementedException("Repository by entity type retrieval not implemented.");

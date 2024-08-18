@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace CleanBase.Core.Services.Core.Base
 {
 	public interface IEmailTemplateService :
-		IServiceBaseOfT4<EmailTemplate, EmailTemplateRequest, EmailTemplateResponse, EmailTemplateGetAllRequest>
+		IServiceBase<EmailTemplate, EmailTemplateRequest, EmailTemplateResponse, EmailTemplateGetAllRequest>
 	{
 	}
 }

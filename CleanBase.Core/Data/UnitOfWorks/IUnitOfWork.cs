@@ -45,7 +45,7 @@ namespace CleanBase.Core.Data.UnitOfWorks
 		/// </summary>
 		/// <typeparam name="T">The type of the entity.</typeparam>
 		/// <returns>An instance of <see cref="IRepository{T}"/> for the specified entity type.</returns>
-		IRepositoryOfT<T> GetRepositoryByEntityType<T>() where T : class, IEntityCore;
+		IRepository<T> GetRepositoryByEntityType<T>() where T : class, IEntityCore;
 
 		/// <summary>
 		/// Retrieves a repository of the specified type.
