@@ -105,5 +105,13 @@ namespace CleanBase.Core.Data.Repositories
 		public abstract void BatchDelete(IEnumerable<string> keys, bool saveChanges = false);
 
 		public abstract void BulkDelete(IEnumerable<string> keys, bool saveChanges = false);
+
+		public abstract Task<bool> DeleteAsync(T entity, bool saveChanges = false);
+
+		public abstract Task<bool> HardDeleteAsync(T entity, bool saveChanges = false);
+
+		public abstract Task<bool> DeleteAsync(params object[] keys);
+
+		public abstract Task<bool> HardDeleteAsync(params object[] keys);
 	}
 }

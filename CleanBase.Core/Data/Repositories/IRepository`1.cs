@@ -45,7 +45,8 @@ namespace CleanBase.Core.Data.Repositories
 		bool Delete(T entity, bool saveChanges = false);
 
 		bool HardDelete(T entity, bool saveChanges = false);
-
+		Task<bool> DeleteAsync(T entity, bool saveChanges = false);
+		Task<bool> HardDeleteAsync(T entity, bool saveChanges = false);
 		void BatchDelete(IEnumerable<T> enties, bool saveChanges = false);
 
 		void BulkDelete(IEnumerable<T> enties, bool saveChanges = false);
@@ -57,6 +58,8 @@ namespace CleanBase.Core.Data.Repositories
 		bool Delete(params object[] keys);
 
 		bool HardDelete(params object[] keys);
+		Task<bool> DeleteAsync(params object[] keys);
+		Task<bool> HardDeleteAsync(params object[] keys);
 
 		T Find(params object[] keys);
 
