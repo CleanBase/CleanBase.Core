@@ -22,9 +22,9 @@ namespace CleanBase.Core.Services.Core.Generic
 
 		Task<T> SaveAsync(TRequest entity);
 
-		Task<bool> SoftDeleteAsync(string id);
+		Task<bool> SoftDeleteAsync(Guid id);
 
-		Task<bool> HardDeleteAsync(string id);
+		Task<bool> HardDeleteAsync(Guid id);
 
 		Task UpsertAsync<T2, TKey>(
 			IEnumerable<T2> source,

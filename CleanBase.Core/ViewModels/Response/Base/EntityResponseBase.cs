@@ -8,6 +8,6 @@ namespace CleanBase.Core.ViewModels.Response.Base
 {
 	public class EntityResponseBase
 	{
-		public string Id { get; set; }
+		public Guid Id { get; set; }
 	}
 }
