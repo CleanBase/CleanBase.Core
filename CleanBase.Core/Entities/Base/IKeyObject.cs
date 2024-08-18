@@ -8,5 +8,6 @@ namespace CleanBase.Core.Entities.Base
 {
     public interface IKeyObject
     {
+		string Id { get; set; }
     }
 }
