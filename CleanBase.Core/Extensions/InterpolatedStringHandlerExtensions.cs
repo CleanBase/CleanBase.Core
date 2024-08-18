@@ -9,13 +9,20 @@ namespace CleanBase.Core.Extensions
 {
 	public static class InterpolatedStringHandlerExtensions
 	{
-		public static string BuildMessage(this DefaultInterpolatedStringHandler handler, string literal, params object[] args)
+		public static string BuildMessage(this DefaultInterpolatedStringHandler handler, params object[] parts)
 		{
-			handler.AppendLiteral(literal);
-			foreach (var arg in args)
+			foreach (var part in parts)
 			{
-				handler.AppendFormatted(arg);
+				if (part is string literal)
+				{
+					handler.AppendLiteral(literal);
+				}
+				else
+				{
+					handler.AppendFormatted(part);
+				}
 			}
+
 			return handler.ToStringAndClear();
 		}
 	}
