@@ -113,5 +113,9 @@ namespace CleanBase.Core.Data.Repositories
 		public abstract Task<bool> DeleteAsync(params object[] keys);
 
 		public abstract Task<bool> HardDeleteAsync(params object[] keys);
+
+		public abstract Task<T> UpdateAsync(T entity, bool saveChanges = false);
+
+		public abstract Task BatchUpdateAsync(IEnumerable<T> entities, bool saveChanges = false);
 	}
 }

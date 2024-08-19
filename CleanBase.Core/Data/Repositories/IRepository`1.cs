@@ -35,8 +35,11 @@ namespace CleanBase.Core.Data.Repositories
 		Task BulkAddAsync(IEnumerable<T> entities, bool saveChanges = false);
 
 		T Update(T entity, bool saveChanges = false);
+		Task<T> UpdateAsync(T entity, bool saveChanges = false);
 
 		void BatchUpdate(IEnumerable<T> entities, bool saveChanges = false);
+		Task BatchUpdateAsync(IEnumerable<T> entities, bool saveChanges = false);
+
 
 		void BulkUpdate(IEnumerable<T> entities, bool saveChanges = false);
 
