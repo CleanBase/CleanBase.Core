@@ -10,12 +10,12 @@ namespace CleanBase.Core.Data.Policies.Generic
 {
 	public class DeleteOwnerOnlyPolicy<T> : ModificationPolicy<T>, IDeletePolicy<T> where T : IEntityAudit
 	{
-		private readonly string _userName;
+		private readonly Guid _userId;
 		private readonly bool _isSuperAdmin;
 
-		public DeleteOwnerOnlyPolicy(string userName, bool isSuperAdmin)
+		public DeleteOwnerOnlyPolicy(Guid userId, bool isSuperAdmin)
 		{
-			_userName = userName;
+			_userId = userId;
 			_isSuperAdmin = isSuperAdmin;
 		}
 
@@ -23,7 +23,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 		{
 			base.ChallengeDelete(entity);
 
-			if (!_isSuperAdmin && _userName != entity.CreatedBy)
+			if (!_isSuperAdmin && _userId != entity.CreatedBy)
 			{
 				 throw new DomainValidationException("The entity is created by another user");
 			}

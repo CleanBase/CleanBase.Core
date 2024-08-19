@@ -16,7 +16,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 
 		public Expression<Func<T, bool>> Predicate()
 		{
-			string user = this._coreProvider.IdentityProvider.Identity.UserName;
+			Guid user = this._coreProvider.IdentityProvider.Identity.UserId;
 			return (Expression<Func<T, bool>>)(p => p.CreatedBy == user);
 		} 
 

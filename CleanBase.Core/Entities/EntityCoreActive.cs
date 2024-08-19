@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CleanBase.Core.Entities
 {
 	public class EntityCoreActive :
-		EntityCoreActive<string>,
+		EntityCoreActive<Guid>,
 		IEntityKey
 	{
 	}

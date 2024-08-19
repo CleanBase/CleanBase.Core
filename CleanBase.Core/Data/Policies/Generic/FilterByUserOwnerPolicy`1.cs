@@ -10,15 +10,15 @@ namespace CleanBase.Core.Data.Policies.Generic
 {
 	public class FilterByUserOwnerPolicy<T> : FilterPolicy<T> where T : IEntityAudit
 	{
-		public FilterByUserOwnerPolicy(string userName)
-		  : base(p => p.CreatedBy == userName)
+		public FilterByUserOwnerPolicy(Guid userId)
+		  : base(p => p.CreatedBy == userId)
 		{
 		}
 		public FilterByUserOwnerPolicy(IIdentityProvider identityProvider)
 		{
 			if (identityProvider.Identity != null)
 			{
-				this.Expression = p => p.CreatedBy == identityProvider.Identity.Name;
+				this.Expression = p => p.CreatedBy == identityProvider.Identity.UserId;
 			}
 			else
 			{

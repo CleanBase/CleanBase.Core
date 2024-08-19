@@ -10,39 +10,39 @@ namespace CleanBase.Core.Data.Policies.Generic
 {
 	public class AuditRequiredPolicy<T> : IAddPolicy<T>, IUpdatePolicy<T> where T : IEntityAudit
 	{
-		private readonly string _userName;
+		private readonly Guid _userId;
 
-		public AuditRequiredPolicy(string userName) => _userName = userName;
+		public AuditRequiredPolicy(Guid userId) => _userId = userId;
 
 		public AuditRequiredPolicy(ICoreProvider coreProvider)
 		{
 			var identityProvider = coreProvider.IdentityProvider;
-			_userName = identityProvider?.Identity?.UserName ?? string.Empty;
+			_userId = identityProvider?.Identity?.UserId ?? Guid.Empty;
 		}
 
 		public void ChallengeAfterAdd(T entity)
 		{
-			entity.CreatedBy = string.IsNullOrEmpty(entity.CreatedBy) ? _userName : entity.CreatedBy;
+			entity.CreatedBy = entity.UpdatedBy == Guid.Empty ? _userId : entity.CreatedBy;
 			entity.CreatedDate = DateTime.UtcNow;
-			entity.UpdatedBy = string.IsNullOrEmpty(entity.UpdatedBy) ? _userName : entity.UpdatedBy;
+			entity.UpdatedBy = entity.UpdatedBy == Guid.Empty ? _userId : entity.UpdatedBy;
 			entity.UpdatedDate = entity.CreatedDate;
 		}
 
 		public void ChallengeBeforeAdd(T entity)
 		{
-			entity.CreatedBy = string.IsNullOrEmpty(entity.CreatedBy) ? _userName : entity.CreatedBy;
+			entity.CreatedBy = entity.UpdatedBy == Guid.Empty ? _userId : entity.CreatedBy;
 			entity.CreatedDate = DateTime.UtcNow;
-			entity.UpdatedBy = string.IsNullOrEmpty(entity.UpdatedBy) ? _userName : entity.UpdatedBy;
+			entity.UpdatedBy = entity.UpdatedBy == Guid.Empty ? _userId : entity.UpdatedBy;
 			entity.UpdatedDate = entity.CreatedDate;
 		}
 		public void ChallengeAfterUpdate(T entity)
 		{
-			entity.UpdatedBy = _userName;
+			entity.UpdatedBy = _userId;
 			entity.UpdatedDate = DateTime.UtcNow;
 		}
 		public void ChallengeBeforeUpdate(T entity)
 		{
-			entity.UpdatedBy = string.IsNullOrEmpty(entity.UpdatedBy) ? _userName : entity.UpdatedBy;
+			entity.UpdatedBy = entity.UpdatedBy == Guid.Empty ? _userId : entity.UpdatedBy;
 			entity.UpdatedDate = DateTime.UtcNow;
 		}
 	}

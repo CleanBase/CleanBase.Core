@@ -13,6 +13,9 @@ namespace CleanBase.Core.Domain
 		protected virtual string SubClaimName { get; set; } = "SUB";
 		protected virtual string RoleClaimName => "ROLE";
 		protected virtual string PermissionClaimName => "PERMISSION ";
+		protected virtual string UserIdClaimName { get; set; } = "USER_ID";
+
+		public Guid UserId { get; set; }
 		public string UserName { get; set; }
 		public string Name { get; set; }
 		public string Sub { get; set; }
@@ -34,6 +37,12 @@ namespace CleanBase.Core.Domain
 			this.Name = user.Identity.Name;
 
 			this.Sub = user.FindFirst(this.SubClaimName)?.Value;
+
+			var userIdClaim = user.FindFirst(this.UserIdClaimName)?.Value;
+			if (Guid.TryParse(userIdClaim, out var userId))
+			{
+				this.UserId = userId;
+			}
 
 			this.Roles = (IEnumerable<string>)user
 				.FindAll(this.RoleClaimName)

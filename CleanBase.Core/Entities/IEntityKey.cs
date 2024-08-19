@@ -2,7 +2,7 @@
 
 namespace CleanBase.Core.Entities
 {
-    public interface IEntityKey : IEntityKey<string>
+    public interface IEntityKey : IEntityKey<Guid>
     {
     }
 }

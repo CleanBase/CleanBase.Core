@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Entities
 {
-	public class EntityActive : EntityActive<string>
+	public class EntityActive : EntityActive<Guid>
 	{
 	}
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CleanBase.Core.Entities
 {
 	public class EntityCoreKey : 
-		EntityCoreKey<string>,
+		EntityCoreKey<Guid>,
 		IEntityKey
 	{
 	}
