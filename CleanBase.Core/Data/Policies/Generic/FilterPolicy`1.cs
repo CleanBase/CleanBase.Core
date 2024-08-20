@@ -14,7 +14,7 @@ namespace CleanBase.Core.Data.Policies.Generic
 		public FilterPolicy() { }
 		public FilterPolicy(Expression<Func<T, bool>> expression) => Expression = expression;
 
-		Expression<Func<T, bool>> Predicate() => this.Expression;
-
+		public Expression<Func<T, bool>> Predicate() => this.Expression;
+		
 	}
 }
