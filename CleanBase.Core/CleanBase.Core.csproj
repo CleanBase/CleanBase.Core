@@ -10,6 +10,7 @@
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<DebugSymbols>false</DebugSymbols> 
     <DebugType>none</DebugType> 
+    <ExcludeAssets>build;buildTransitive</ExcludeAssets>
   </PropertyGroup>
 
   <ItemGroup>
