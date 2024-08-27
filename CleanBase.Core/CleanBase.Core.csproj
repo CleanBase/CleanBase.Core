@@ -8,6 +8,8 @@
 	<Authors>HoangVH238</Authors>
 	<Product>CleanBase.Core</Product>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<DebugSymbols>false</DebugSymbols> 
+    <DebugType>none</DebugType> 
   </PropertyGroup>
 
   <ItemGroup>
