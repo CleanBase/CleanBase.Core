@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanBase.Core.Entities.Base
 {
-    internal interface IFilterRequestBase
+    public interface IFilterRequestBase
     {
     }
 }
